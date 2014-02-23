@@ -1,0 +1,1 @@
+A mod to generally remove micromanagement and add stuff that doesn't interfere with that goal.
