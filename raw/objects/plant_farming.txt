@@ -25,9 +25,9 @@ plant_farming
 	[ADJ:blade weed]
 	[PREFSTRING:stiff, triangular leaves]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:2:0:0]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[PICKED_TILE:252][PICKED_COLOR:2:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -63,9 +63,9 @@ plant_farming
 	[ADJ:bloated tuber]
 	[PREFSTRING:stout shape]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:6:0:0]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[PICKED_TILE:'%'][PICKED_COLOR:6:0:0]
+	[SHRUB_TILE:237]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:6:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -100,9 +100,9 @@ plant_farming
 	[ADJ:fisher berry]
 	[PREFSTRING:round shape]
 ==============
-	[PICKED_TILE:'%'][PICKED_COLOR:3:0:0]
+	[PICKED_TILE:248][PICKED_COLOR:3:0:0]
 	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -140,9 +140,9 @@ plant_farming
 	[NAME_PLURAL:hide root]
 	[ADJ:hide root]
 ==============
-	[PICKED_TILE:231][PICKED_COLOR:6:0:0]
-	[SHRUB_TILE:231]
-	[DEAD_SHRUB_TILE:231]
+	[PICKED_TILE:252][PICKED_COLOR:6:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:6:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -178,9 +178,9 @@ plant_farming
 	[PREFSTRING:shrouded history]
 ==============
 	[PICKED_TILE:'%'][PICKED_COLOR:0:0:1]
-	[SHRUB_TILE:249]
-	[DEAD_SHRUB_TILE:231]
-	[SHRUB_COLOR:0:0:1]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
+	[SHRUB_COLOR:7:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
 	[VALUE:5]
@@ -212,10 +212,10 @@ plant_farming
 	[ADJ:Longland grass]
 	[PREFSTRING:sweeping stalks]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:6:0:0]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:231]
-	[SHRUB_COLOR:6:0:0]
+	[PICKED_TILE:252][PICKED_COLOR:2:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
+	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
 	[VALUE:2]
@@ -261,9 +261,9 @@ plant_farming
 	[ADJ:muck root]
 	[PREFSTRING:twisting shape]
 ==============
-	[PICKED_TILE:231][PICKED_COLOR:6:0:0]
-	[SHRUB_TILE:231]
-	[DEAD_SHRUB_TILE:231]
+	[PICKED_TILE:252][PICKED_COLOR:6:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:6:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -298,9 +298,9 @@ plant_farming
 	[ADJ:prickle berry]
 	[PREFSTRING:precise thorns]
 ==============
-	[PICKED_TILE:'%'][PICKED_COLOR:4:0:0]
+	[PICKED_TILE:248][PICKED_COLOR:4:0:0]
 	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -340,10 +340,10 @@ plant_farming
 	[ADJ:rat weed]
 	[PREFSTRING:hanging leaves]
 ==============
-	[PICKED_TILE:231][PICKED_COLOR:6:0:0]
-	[SHRUB_TILE:231]
-	[DEAD_SHRUB_TILE:231]
-	[SHRUB_COLOR:6:0:0]
+	[PICKED_TILE:252][PICKED_COLOR:2:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
+	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
 	[VALUE:1]
@@ -381,9 +381,9 @@ plant_farming
 	[ADJ:rope reed]
 	[PREFSTRING:precise lines]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:2:0:0]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[PICKED_TILE:252][PICKED_COLOR:2:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -422,9 +422,9 @@ plant_farming
 	[ADJ:sliver barb]
 	[PREFSTRING:wicked thorns]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:0:0:1]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[PICKED_TILE:252][PICKED_COLOR:0:0:1]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:7:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -469,9 +469,9 @@ plant_farming
 	[ADJ:strawberry]
 	[PREFSTRING:vivid red color]
 ==============
-	[PICKED_TILE:'%'][PICKED_COLOR:4:0:0]
+	[PICKED_TILE:248][PICKED_COLOR:4:0:0]
 	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -511,9 +511,9 @@ plant_farming
 	[ADJ:sun berry]
 	[PREFSTRING:inner light]
 ==============
-	[PICKED_TILE:'%'][PICKED_COLOR:6:0:1]
+	[PICKED_TILE:248][PICKED_COLOR:6:0:0]
 	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -554,9 +554,9 @@ plant_farming
 	[PREFSTRING:tiny leaves]
 	[PREFSTRING:soothing fragrance]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:2:0:0]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[PICKED_TILE:252][PICKED_COLOR:2:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -590,7 +590,7 @@ plant_farming
 ==============
 	[PICKED_TILE:21][PICKED_COLOR:2:0:0]
 	[SHRUB_TILE:21]
-	[DEAD_SHRUB_TILE:21]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:2:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -644,9 +644,9 @@ plant_farming
 	[ADJ:dimple cup]
 	[PREFSTRING:soothing color]
 ==============
-	[PICKED_TILE:169][PICKED_COLOR:3:0:0]
-	[SHRUB_TILE:169]
-	[DEAD_SHRUB_TILE:169]
+	[PICKED_TILE:3][PICKED_COLOR:3:0:0]
+	[SHRUB_TILE:3]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:3:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -683,10 +683,10 @@ plant_farming
 	[ADJ:cave wheat]
 	[PREFSTRING:stalks]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:6:0:0]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
-	[SHRUB_COLOR:6:0:0]
+	[PICKED_TILE:252][PICKED_COLOR:7:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
+	[SHRUB_COLOR:7:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
 	[GROWDUR:500]
@@ -735,9 +735,9 @@ plant_farming
 	[ADJ:pig tail]
 	[PREFSTRING:twisting stalks]
 ==============
-	[PICKED_TILE:'"'][PICKED_COLOR:7:0:0]
-	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[PICKED_TILE:252][PICKED_COLOR:7:0:0]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:7:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -779,9 +779,9 @@ plant_farming
 	[ADJ:plump helmet]
 	[PREFSTRING:rounded tops]
 ==============
-	[PICKED_TILE:169][PICKED_COLOR:5:0:0]
-	[SHRUB_TILE:169]
-	[DEAD_SHRUB_TILE:169]
+	[PICKED_TILE:3][PICKED_COLOR:5:0:1]
+	[SHRUB_TILE:3]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:5:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -824,8 +824,8 @@ plant_farming
 	[PREFSTRING:round shape]
 ==============
 	[PICKED_TILE:'%'][PICKED_COLOR:4:0:0]
-	[SHRUB_TILE:249]
-	[DEAD_SHRUB_TILE:249]
+	[SHRUB_TILE:252]
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:4:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
@@ -888,7 +888,7 @@ plant_farming
 ==============
 	[PICKED_TILE:'"'][PICKED_COLOR:7:0:0]
 	[SHRUB_TILE:'"']
-	[DEAD_SHRUB_TILE:'"']
+	[DEAD_SHRUB_TILE:252]
 	[SHRUB_COLOR:7:0:0]
 	[DEAD_SHRUB_COLOR:0:0:1]
 ==============
