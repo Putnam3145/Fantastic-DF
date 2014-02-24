@@ -8,7 +8,7 @@ end
 
 eventful=require('plugins.eventful')
 
-eventful.enableEvent('ITEM_CREATED',5)
+eventful.enableEvent(eventful.eventType['ITEM_CREATED'],5)
 
 eventful.onItemCreated.artifactFantasticP=function(item_id)
 	local item=df.item.find(item_id)
