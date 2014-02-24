@@ -19,7 +19,7 @@ reaction_macro_fantastic
 
 	
 [REACTION:SOAP_MAKING_MACRO_P]
-	[NAME:make soap (macro)]
+	[NAME:fill out request for soap (macro)]
 	[BUILDING:TOKEN_STATION_FANTASTIC_P:CUSTOM_S]
 	[PRODUCT:100:1:TOOL:SOAP_TOKEN_1_P:NONE:NONE]
 	[SKILL:ORGANIZATION]
