@@ -171,6 +171,10 @@ fix/cloth-stockpile enable
 # fix dwarf growth size
 fix/growthbug enable
 
+#Allow wish reactions.
+
+#hackwish startup
+
 #######################################################
 # Apply binary patches at runtime                     #
 #######################################################
@@ -191,3 +195,5 @@ binpatch apply training-ammo
 # Bug 1445 - weapon racks broken, armor stand capacity too low
 binpatch apply weaponrack-unassign
 binpatch apply armorstand-capacity
+
+cls
