@@ -2,6 +2,8 @@ plant_fake_potion_fantastic
 
 [OBJECT:PLANT]
 
+TODO figure out how to actually implement these...
+
 [PLANT:POTION_FANTASTIC]
 	[NAME:potions]
 	[NAME_PLURAL:potions]
