@@ -233,7 +233,7 @@ end
 eventful=require('plugins.eventful')
 
 function posIsValid(pos)
-	return pos.x~=-30000
+	return pos.x~=-30000 and pos or false
 end 
 
 if not args.startup then 
