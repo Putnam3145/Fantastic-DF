@@ -7,8 +7,8 @@ function transform(target,race,caste,length)
     end
     local defaultRace = target.enemy.normal_race
     local defaultCaste = target.enemy.normal_caste
-    target.enemy.normal_race = race --that's it???
-    target.enemy.normal_caste = caste; --that's it!
+    target.enemy.normal_race = race
+    target.enemy.normal_caste = caste
     if length>0 then dfhack.timeout(length,'ticks',function() target.enemy.normal_race = defaultRace target.enemy.normal_caste = defaultCaste end) end
 end
 

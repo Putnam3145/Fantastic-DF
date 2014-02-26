@@ -231,9 +231,13 @@ for k,v in ipairs(scriptArgs) do
 end
  
 eventful=require('plugins.eventful')
- 
+
+function posIsValid(pos)
+	return pos.x~=-30000
+end 
+
 if not args.startup then 
-    local posOrUnit=#args<1 and dfhack.gui.getSelectedUnit(true) and dfhack.gui.getSelectedUnit(true) or not unitNum and df.global.cursor or args.unitNum and df.unit.find(args.unitNum) or {x=args.x,y=args.y,z=args.z}
+    local posOrUnit=args.x and {x=args.x,y=args.y,z=args.z} or args.unitNum and df.unit.find(args.unitNum) or posIsValid(df.global.cursor) or dfhack.gui.getSelectedUnit(true)
     hackWish(posOrUnit)
 else
     eventful.onReactionComplete.hackWishP=function(reaction,unit,input_items,input_reagents,output_items,call_native)
