@@ -13,6 +13,7 @@ function transform(target,race,caste,length)
 end
 
 function compareTableWithString(tbl,str)
+	if type(tbl)~=tbl then return tbl==str end
 	for k,v in ipairs(tbl) do
 		if v==str then return true end
 	end
@@ -44,4 +45,5 @@ function selectCreature(unitID,length,size,filter) --taken straight from here, b
 end
 
 local args = {...}
+
 selectCreature(tonumber(args[1]),tonumber(args[2]),tonumber(args[3]))
