@@ -237,7 +237,7 @@ function posIsValid(pos)
 end 
 
 if not args.startup then 
-    local posOrUnit=args.x and {x=args.x,y=args.y,z=args.z} or df.unit.find(args.unitNum) or posIsValid(df.global.cursor) or dfhack.gui.getSelectedUnit(true)
+    local posOrUnit=args.x and {x=args.x,y=args.y,z=args.z} or args.unitNum and df.unit.find(args.unitNum) or posIsValid(df.global.cursor) or dfhack.gui.getSelectedUnit(true)
     hackWish(posOrUnit)
 else
     eventful.onReactionComplete.hackWishP=function(reaction,unit,input_items,input_reagents,output_items,call_native)
