@@ -1,14 +1,14 @@
 function isBlunt(item)
 	if not item:isWeapon() then return false end
 	for k,v in ipairs(item.subtype.attacks) do
-		if v.edged then return true end
+		if v.edged then return false end
 	end
-	return false
+	return true
 end
 
 eventful=require('plugins.eventful')
 
-eventful.enableEvent(eventful.eventType['ITEM_CREATED'],5)
+eventful.enableEvent(eventful.eventType['ITEM_CREATED'],4)
 
 eventful.onItemCreated.fantasticP=function(item_id)
 	local item=df.item.find(item_id)
