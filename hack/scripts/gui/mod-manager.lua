@@ -118,7 +118,7 @@ function manager:init(args)
                 mods[modData.name]=modData
                 modData.guard=modData.guard or {">>"..modData.name.." patch","<<End "..modData.name.." patch"}
                 modData.guard_init={"--"..modData.guard[1],"--"..modData.guard[2]}
-                modData.path=dfhack.getDFPath()..'/mods/'..v..'/'
+                modData.path=dfhack.getHackPath()..'/mods/'..v..'/'
             end
 		end
 	end

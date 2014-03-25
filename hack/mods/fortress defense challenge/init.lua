@@ -2,7 +2,7 @@ local G=_G
 local _ENV={}
 
 name="Fortress Defense Challenge"
-raws_list={"creature_fdbonus.txt","entity_fdbonus.txt"}
+raws_list={"creature_fdchallenge.txt","entity_fdchallenge.txt"}
 		   
 author="darkflagrance"
 description=[[
