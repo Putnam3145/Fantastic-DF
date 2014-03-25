@@ -113,7 +113,6 @@ function manager:init(args)
 	for k,v in ipairs(mlist) do
 		if v~="." and v~=".." then
 			local f,modData=pcall(dofile,dfhack.getHackPath().."/mods/".. v .. "/init.lua")
-			print(f,modData)
             if f then
                 mods[modData.name]=modData
                 modData.guard=modData.guard or {">>"..modData.name.." patch","<<End "..modData.name.." patch"}
