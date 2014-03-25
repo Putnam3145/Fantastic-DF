@@ -1,5 +1,0 @@
-# patch the material objects in memory to fix cloth stockpiles
-fix/cloth-stockpile enable
-
-# fix dwarf growth size
-fix/growthbug enable
