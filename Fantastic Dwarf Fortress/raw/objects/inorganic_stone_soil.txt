@@ -1,0 +1,61 @@
+inorganic_stone_soil
+
+Uristocrat: Soil density data from:
+http://www.pedosphere.com/resources/bulkdensity/worktable_us.cfm
+ 
+In spite of the weird URL, the site is normal.
+ 
+DF is based on the texture triangle, which you can see here:
+http://www.pedosphere.com/resources/bulkdensity/triangle_us.cfm
+ 
+All of these are actually mixes of sand, silt & clay.  Loam is a
+roughly equal mix of all three.  So I'll give the percentages of
+each that I used to find the density.  For example, SCS = 20/60/20
+means that a soil was assumed to contain 20% sand, 60% clay & 20%
+silt.  The numbers will always be in the order sand/clay/silt.
+
+[OBJECT:INORGANIC]
+
+[INORGANIC:CLAY]
+[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:clay][DISPLAY_COLOR:4:6:0][TILE:178]
+[SOIL]
+[SOLID_DENSITY:1210]
+[MATERIAL_REACTION_PRODUCT:FIRED_MAT:INORGANIC:CERAMIC_EARTHENWARE]
+
+[INORGANIC:FIRE_CLAY]
+[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:fire clay][DISPLAY_COLOR:4:6:0][TILE:178]
+[SOIL]
+[SOLID_DENSITY:2300]
+[MATERIAL_REACTION_PRODUCT:FIRED_MAT:INORGANIC:CERAMIC_STONEWARE]
+
+[INORGANIC:LOAM]
+[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:loam][DISPLAY_COLOR:6:7:0][TILE:176]
+[SOIL][AQUIFER]
+[SOLID_DENSITY:1410]
+
+[INORGANIC:SILT]
+[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:silt][DISPLAY_COLOR:6:7:0][TILE:178]
+[SOIL][AQUIFER]
+[SOLID_DENSITY:1450]
+
+[INORGANIC:SAND]
+[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:sand][DISPLAY_COLOR:6:4:1][TILE:176]
+[SOIL][AQUIFER][SOIL_SAND]
+[SOLID_DENSITY:1710]
+
+[INORGANIC:PEAT]
+[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:peat][DISPLAY_COLOR:0:6:1][TILE:176]
+[SOIL][AQUIFER]
+[SOLID_DENSITY:850]
+
+[INORGANIC:PELAGIC_CLAY]
+[USE_MATERIAL_TEMPLATE:SOIL_TEMPLATE]
+[STATE_NAME_ADJ:ALL_SOLID:pelagic clay][DISPLAY_COLOR:4:6:0][TILE:176]
+[SOIL_OCEAN][AQUIFER]
+[SOLID_DENSITY:2200]
