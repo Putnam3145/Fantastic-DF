@@ -95,6 +95,8 @@ keybinding add Shift-B@pet/List/Unit "gui/autobutcher"
 # assign weapon racks to squads so that they can be used
 keybinding add P@dwarfmode/QueryBuilding/Some/Weaponrack gui/assign-rack
 
+keybinding add S@title gui/mod-manager
+
 ############################
 # UI and game logic tweaks #
 ############################
