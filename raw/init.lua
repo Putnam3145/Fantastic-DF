@@ -13,7 +13,7 @@ eventful.enableEvent(eventful.eventType['ITEM_CREATED'],4)
 eventful.onItemCreated.fantasticP=function(item_id)
     local item=df.item.find(item_id)
     --check if item is eligible for this particular function
-    if item.flags.artifact and (item:isWeapon() or item:getEffectiveArmorLevel()<2)
+    if item.flags.artifact and (item:isWeapon() or item:getEffectiveArmorLevel()<2) then
         local matInfo
         --check if blunt or not; if blunt, set matInfo (defined above) to the blunt artifact mat, else sharp/armor artifact mat
         if isBlunt(item) then
