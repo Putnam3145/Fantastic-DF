@@ -114,7 +114,7 @@ function manager:init(args)
 		if v~="." and v~=".." then
 			local f,modData=pcall(dofile,dfhack.getHackPath().."/mods/".. v .. "/init.lua")
             if f then
-                mods[modData.loadnum]=modData
+                mods[modData.name]=modData
                 modData.guard=modData.guard or {">>"..modData.name.." patch","<<End "..modData.name.." patch"}
                 modData.guard_init={"--"..modData.guard[1],"--"..modData.guard[2]}
                 modData.path=dfhack.getHackPath()..'/mods/'..v..'/'
@@ -126,7 +126,7 @@ function manager:init(args)
     for k,v in pairs(self.mods) do 
         table.insert(modList,{text=k,data=v}) 
     end
-    
+    table.sort(modList,function(a,b) return a.data.loadnum<b.data.loadnum end)
     self:addviews{
         
         
