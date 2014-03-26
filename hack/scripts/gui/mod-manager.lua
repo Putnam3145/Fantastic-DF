@@ -114,7 +114,7 @@ function manager:init(args)
 		if v~="." and v~=".." then
 			local f,modData=pcall(dofile,dfhack.getHackPath().."/mods/".. v .. "/init.lua")
             if f then
-                mods[modData.name]=modData
+                mods[modData.loadnum]=modData
                 modData.guard=modData.guard or {">>"..modData.name.." patch","<<End "..modData.name.." patch"}
                 modData.guard_init={"--"..modData.guard[1],"--"..modData.guard[2]}
                 modData.path=dfhack.getHackPath()..'/mods/'..v..'/'
