@@ -126,7 +126,7 @@ function manager:init(args)
     for k,v in pairs(self.mods) do 
         table.insert(modList,{text=k,data=v}) 
     end
-    
+    table.sort(modList,function(a,b) return a.data.loadnum<b.data.loadnum end)
     self:addviews{
         
         

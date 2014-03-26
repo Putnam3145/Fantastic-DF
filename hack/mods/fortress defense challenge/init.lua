@@ -1,7 +1,8 @@
 local G=_G
 local _ENV={}
 
-name="Fortress Defense Challenge"
+loadnum=2
+name="FD Challenge"
 raws_list={"creature_fdchallenge.txt","entity_fdchallenge.txt"}
 		   
 author="darkflagrance"

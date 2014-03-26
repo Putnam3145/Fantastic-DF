@@ -1,6 +1,7 @@
 local G=_G
 local _ENV={}
 
+loadnum=3
 name="FD Bonus"
 raws_list={"creature_fdbonus.txt","entity_fdbonus.txt"}
 		   
