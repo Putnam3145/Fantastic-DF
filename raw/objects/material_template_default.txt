@@ -2993,6 +2993,7 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[ROTS]
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
+	[EDIBLE_RAW]
 
 [MATERIAL_TEMPLATE:EGG_YOLK_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:YELLOW]
@@ -3040,7 +3041,8 @@ This is for creatures that are "made of fire".  Right now there isn't a good for
 	[ROTS]
 	[EDIBLE_VERMIN]
 	[EDIBLE_COOKED]
-
+	[EDIBLE_RAW]
+	
 [MATERIAL_TEMPLATE:PLANT_OIL_TEMPLATE]
 	[STATE_COLOR:ALL_SOLID:YELLOW]
 	[STATE_NAME:ALL_SOLID:frozen vegetable oil]
