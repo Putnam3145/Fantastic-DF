@@ -158,7 +158,10 @@ enable automaterial
 enable dwarfmonitor mousequery autotrade buildingplan resume zone
 
 # Auto Syndrome
-#autoSyndrome enable
+autoSyndrome enable
+
+#Syndrome Trigger
+syndromeTrigger enable 
 
 ###########
 # Scripts #
