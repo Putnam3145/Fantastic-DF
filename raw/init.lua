@@ -54,7 +54,7 @@ do
 	end
 end
 
--->>Weekly complaint report patch
+-->>Weekly complaints patch
 do
 	local script=require('gui.script')
 	local citizens={}
@@ -103,4 +103,4 @@ do
 	end
 	checkForBadThoughts()
 end
---<<End Weekly complaint report patch
+--<<End Weekly complaints patch
