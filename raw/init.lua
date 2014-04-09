@@ -37,7 +37,7 @@ end
 local fantasticEvents={}
 fantasticEvents.onUnitSpawned=dfhack.event.new()
 do
-	local script=require('gui.scripts')
+	local script=require('gui.script')
 	local prevNumUnits=#df.global.world.units.all
 	local function checkUnitSpawned()
 		script.start(function()
@@ -48,7 +48,7 @@ do
 			end
 			prevNumUnits=curNumUnits
 		end
-		script.sleep('ticks',200)
+		script.sleep(200,'ticks')
 		checkUnitSpawned()
 		end)
 	end
@@ -56,7 +56,7 @@ end
 
 -->>Weekly complaint report patch
 do
-	local script=require('gui.scripts')
+	local script=require('gui.script')
 	local citizens={}
 	fantasticEvents.onUnitSpawned.badThoughtNotifier=function(unitID)
 		local unit=df.units.find(unitID)
@@ -70,7 +70,7 @@ do
 		end
 	end
 	local function thoughtIsNegative(thought)
-		return df.unit_thought_type.attrs[thought.type].value:sub(1,1)=='-'
+		return df.unit_thought_type.attrs[thought.type].value:sub(1,1)=='-' and df.unit_thought_type[thought.type]~='LackChairs'
 	end
 	local function write_gamelog_and_announce(msg,color)
 		dfhack.gui.showAnnouncement(msg,color)
@@ -79,26 +79,28 @@ do
 		log:close()
 	end
 	local function checkForBadThoughts(silent)
-		if not silent then
-			local thoughts={}
-			local mostPopularNegativeThought={cur_amount=0,thought_type=0}
-			for _,unit in ipairs(citizens) do
-				for __,thought in ipairs(unit.status.recent_events) do
-					if thoughtIsNegative(thought) then
-						thoughts[thought.type]=thoughts[thought.type] or 0
-						thoughts[thought.type]=thoughts[thought.type]+1
-						if thoughts[thought.type]>mostPopularNegativeThought.cur_amount then
-							mostPopularNegativeThought.cur_amount=thoughts[thought.type]
-							mostPopularNegativeThought.thought_type=thought.type
-						end
+		script.start(function()
+		local thoughts={}
+		local mostPopularNegativeThought={cur_amount=0,thought_type=-1}
+		for _,unit in ipairs(citizens) do
+			for __,thought in ipairs(unit.status.recent_events) do
+				if thoughtIsNegative(thought) then
+					thoughts[thought.type]=thoughts[thought.type] or 0
+					thoughts[thought.type]=thoughts[thought.type]+1
+					if thoughts[thought.type]>mostPopularNegativeThought.cur_amount then
+						mostPopularNegativeThought.cur_amount=thoughts[thought.type]
+						mostPopularNegativeThought.thought_type=thought.type
 					end
 				end
 			end
+		end
+		if df.unit_thought_type[mostPopularNegativeThought.thought_type] then
 			write_gamelog_and_announce('Your dwarves are most complaining about this: "' .. df.unit_thought_type.attrs[mostPopularNegativeThought.thought_type].caption..'".',COLOR_CYAN)
 		end
-		script.sleep('days',7)
+		script.sleep(7,'days')
 		checkForBadThoughts()
+		end)
 	end
-	checkForBadThoughts(true)
+	checkForBadThoughts()
 end
 --<<End Weekly complaint report patch
