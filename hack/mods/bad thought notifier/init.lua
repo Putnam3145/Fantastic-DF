@@ -1,60 +1,11 @@
--->>Artifact mats patch
-do
-	local function isBlunt(item)
-		if not item:isWeapon() then return false end
-		for k,v in ipairs(item.subtype.attacks) do
-			if v.edged then return false end
-		end
-		return true
-	end
+local G=_G
+local _ENV={}
 
-	local function activateArtifactChanges()
-		local eventful=require('plugins.eventful')
+loadnum=6
+name="Weekly complaints"
+author="Putnam"
 
-		eventful.enableEvent(eventful.eventType['ITEM_CREATED'],4)
-
-		eventful.onItemCreated.fantasticArtifactP=function(item_id)
-			local item=df.item.find(item_id)
-			--check if item is eligible for this particular function
-			if item.flags.artifact and (item:isWeapon() or item:getEffectiveArmorLevel()<2) then
-				local matInfo
-				--check if blunt or not; if blunt, set matInfo (defined above) to the blunt artifact mat, else sharp/armor artifact mat
-				if isBlunt(item) then
-					matinfo=dfhack.matinfo.find('ARTIFACT_BLUNT_P')
-				else
-					matinfo=dfhack.matinfo.find('ARTIFACT_SHARP_ARMOR_P')
-				end
-				item:setMaterial(matInfo.type)
-				item:setMaterialIndex(matinfo.index)
-			end
-		end
-	end
-
-	activateArtifactChanges()
-end
---<<End Artifact mats patch
-
-local fantasticEvents={}
-fantasticEvents.onUnitSpawned=dfhack.event.new()
-do
-	local script=require('gui.script')
-	local prevNumUnits=#df.global.world.units.all
-	local function checkUnitSpawned()
-		script.start(function()
-		local curNumUnits=#df.global.world.units.all
-		if curNumUnits>prevNumUnits then
-			for i=curNumUnits-1,prevNumUnits-1,-1 do
-				fantasticEvents.onUnitSpawned(df.global.world.units.all[i].id)
-			end
-			prevNumUnits=curNumUnits
-		end
-		script.sleep(200,'ticks')
-		checkUnitSpawned()
-		end)
-	end
-end
-
--->>Weekly complaint report patch
+patch_init=[[
 do
 	local script=require('gui.script')
 	local citizens={}
@@ -103,4 +54,10 @@ do
 	end
 	checkForBadThoughts()
 end
---<<End Weekly complaint report patch
+]]
+
+description=[[
+Adds a weekly message about what your dwarves are most unhappy about.
+Recommended! On by default.
+]]
+return _ENV
