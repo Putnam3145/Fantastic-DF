@@ -2,7 +2,7 @@ local _ENV = mkmodule('fantastic.events')
 
 onUnitSpawned=dfhack.event.new()
 
-local hiddenEventInfo={'UNIT_SPAWNED'={prevNumUnits=#df.global.world.units.all,ticks=50}}
+local hiddenEventInfo={UNIT_SPAWNED={prevNumUnits=#df.global.world.units.all,ticks=50}}
 
 hiddenEventInfo.UNIT_SPAWNED.func=function()
 	local script=require('gui.script')
@@ -22,7 +22,7 @@ end
 
 local metaEventTypes={__tostring=function(self) return self.activated end,__metatable='just for tostring'}
 
-eventTypes={'UNIT_SPAWNED'=false}
+eventTypes={UNIT_SPAWNED=false}
 
 setmetatable(eventTypes,metaEventTypes)
 

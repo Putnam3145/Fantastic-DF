@@ -4,17 +4,18 @@ local _ENV={}
 loadnum=-100
 name="Wizard Tower"
 author="Putnam"
-raws_list={'entity_wizard_fantastic.txt','creature_wizard_fantastic','language_WIZARD_FANTASTIC','interaction_wizard_fantastic'}
+raws_list={'entity_wizard_fantastic.txt','creature_wizard_fantastic.txt','language_WIZARD_FANTASTIC.txt','interaction_wizard_fantastic.txt','reaction_wizard_fantastic.txt',
+           'building_wizard_fantastic.txt'}
 
 function findGuards(str,start,patch_guard)
-	local pStart=string.find(str,patch_guard[1],start)
+	local pStart=G.string.find(str,patch_guard[1],start)
 	if pStart==nil then return nil end
-	local pEnd=string.find(str,patch_guard[2],pStart)
+	local pEnd=G.string.find(str,patch_guard[2],pStart)
 	if pEnd==nil then error("Start guard token found, but end was not found") end
 	return pStart-1,pEnd+#patch_guard[2]+1
 end
 
-function addCivControllable(file_name,after_string,code)
+function addCivControllable(file_name,patch_guard,after_string,code)
     local input_lines=patch_guard[1].."\n"..code.."\n"..patch_guard[2]
     
     local badchars="[%:%[%]]"
@@ -24,7 +25,7 @@ function addCivControllable(file_name,after_string,code)
     local buf=entityFile:read("*all")
     entityFile:close()
     local entityFile=G.io.open(file_name,"w+")
-    buf=string.gsub(buf,find_string,after_string.."\n"..input_lines)
+    buf=G.string.gsub(buf,find_string,after_string.."\n"..input_lines)
     entityFile:write(buf)
     entityFile:close()
 end
@@ -56,10 +57,10 @@ pre_install=function(args)
 end
 
 pre_uninstall=function(args)
-	addCivControllable(G.dfhack.getDFPath().."/raw/objects/entity_default.txt","<<Civ controllable patch","[CIV_CONTROLLABLE]")
+	addCivControllable(G.dfhack.getDFPath().."/raw/objects/entity_default.txt",{'<<Civ controllable patch','>>End Civ controllable'},"[ENTITY:MOUNTAIN]","[CIV_CONTROLLABLE]")
 end
 
-patch_init="dofile(dfhack.getDFPath()..'hack/mods/dark wizard tower/darkWizardTower.lua')"
+patch_init="dofile(dfhack.getDFPath()..'/hack/mods/dark wizard tower/darkWizardTower.lua')"
 
 description=[[
 Disables dwarves and replaces them with 

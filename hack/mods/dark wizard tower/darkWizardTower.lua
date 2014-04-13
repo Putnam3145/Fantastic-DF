@@ -13,7 +13,7 @@ end
 
 local function unitMarkedForLife(unit)
 	for k,v in ipairs(unit.general_refs) do
-		if v:is_instance(df.general_ref_interactionst) and (v.anon_1==1959 and anon_2==1004 and anon_3==1041 and anon_4==103) then
+		if df.general_ref_interactionst:is_instance(v) and (v.anon_1==1959 and anon_2==1004 and anon_3==1041 and anon_4==103) then
 			return true
 		end
 	end
@@ -22,7 +22,7 @@ end
 
 local function checkUnitMarkedForLifeAndIfNotMarkOneRandomly()
 	local citizens={}
-	for k,v in ipairs(df.global.world.units.active) do
+	for k,unit in ipairs(df.global.world.units.active) do
 		if dfhack.units.isCitizen(unit) then
 			if unitMarkedForLife(unit) then return true end
 			table.insert(citizens,unit)
@@ -40,3 +40,12 @@ fantasticEvents.onUnitSpawned.wizardTowerP=function(unit_id)
 		killUnit(unit)
 	end
 end
+local checkAnyway=function()
+	for k,unit in ipairs(df.global.world.units.active) do
+		if dfhack.units.isCitizen(unit) and not unitMarkedForLife(unit) then
+			killUnit(unit)
+		end			
+	end
+end
+
+dfhack.timeout(30,'ticks',checkAnyway)
