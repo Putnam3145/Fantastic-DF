@@ -3,7 +3,9 @@ entity_default
 [OBJECT:ENTITY]
 
 [ENTITY:MOUNTAIN]
+	<<Civ controllable patch
 	[CIV_CONTROLLABLE]
+	>>End Civ controllable
 	[CREATURE:DWARF]
 	[TRANSLATION:DWARF]
 	[DIGGER:ITEM_WEAPON_PICK]

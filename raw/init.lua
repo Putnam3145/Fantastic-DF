@@ -34,29 +34,11 @@ do
 end
 --<<End Artifact mats patch
 
-local fantasticEvents={}
-fantasticEvents.onUnitSpawned=dfhack.event.new()
-do
-	local script=require('gui.script')
-	local prevNumUnits=#df.global.world.units.all
-	local function checkUnitSpawned()
-		script.start(function()
-		local curNumUnits=#df.global.world.units.all
-		if curNumUnits>prevNumUnits then
-			for i=curNumUnits-1,prevNumUnits-1,-1 do
-				fantasticEvents.onUnitSpawned(df.global.world.units.all[i].id)
-			end
-			prevNumUnits=curNumUnits
-		end
-		script.sleep(200,'ticks')
-		checkUnitSpawned()
-		end)
-	end
-end
-
 -->>Weekly complaints patch
 do
+	local fantasticEvents=require('fantastic.events')
 	local script=require('gui.script')
+	fantasticEvents.enableEvent('UNIT_SPAWNED',50)
 	local citizens={}
 	fantasticEvents.onUnitSpawned.badThoughtNotifier=function(unitID)
 		local unit=df.units.find(unitID)
