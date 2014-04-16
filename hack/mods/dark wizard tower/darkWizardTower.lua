@@ -91,10 +91,11 @@ dfhack.timeout(25,'ticks',checkUnitMarkedForLifeAndIfNotMarkOneRandomly)
 
 fantasticEvents.onUnitSpawned.wizardTowerP=function(unit_id)
 	local unit = df.unit.find(unit_id)
-	if dfhack.units.isCitizen(unit) and not unitMarkedForLife(unit) then
+	if dfhack.units.isCitizen(unit) then
 		fuseUnit(unit,getMarkedUnit())
 	end
 end
+
 local checkAnyway=function()
 	local markedUnit=getMarkedUnit()
 	for k,unit in ipairs(df.global.world.units.active) do
