@@ -6,7 +6,7 @@ creature_wizard_fantastic
 	[DESCRIPTION:A medium-sized creature prone to greater ambition.]
 	[NAME:dark wizard:dark wizards:dark wizard]
 	[CASTE_NAME:dark wizard:dark wizards:dark wizard]
-	[CREATURE_TILE:'@'][COLOR:3:0:0]
+	[CREATURE_TILE:64][COLOR:3:0:0]
 	[INTELLIGENT]
 	[CANOPENDOORS]
 	[NO_SLEEP][NO_EAT][NO_DRINK][NOEMOTION]

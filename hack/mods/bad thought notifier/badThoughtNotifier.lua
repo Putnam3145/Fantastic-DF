@@ -42,7 +42,7 @@ local function checkForBadThoughts(silent)
 		end
 	end
 	if df.unit_thought_type[mostPopularNegativeThought.thought_type] then
-		write_gamelog_and_announce('Your ' .. getRaceName() ..' are most complaining about this: "' .. df.unit_thought_type.attrs[mostPopularNegativeThought.thought_type].caption..'".'COLOR_CYAN)
+		write_gamelog_and_announce('Your ' .. getRaceName() ..' are most complaining about this: "' .. df.unit_thought_type.attrs[mostPopularNegativeThought.thought_type].caption..'".',COLOR_CYAN)
 	end
 	script.sleep(7,'days')
 	checkForBadThoughts()
