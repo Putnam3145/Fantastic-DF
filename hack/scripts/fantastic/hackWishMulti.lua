@@ -206,7 +206,7 @@ function hackWish(posOrUnit)
             local descriptionok
             descriptionok,description=script.showInputPrompt('Slab','What should the slab say?',COLOR_WHITE)
         end
-        repeat amountok,amount=script.showInputPrompt('Wish','How many do you want? (numbers only!)',COLOR_LIGHTGREEN) until tonumber(amount)
+        repeat amountok,amount=script.showInputPrompt('Wish','How many do you want? (numbers only!)',COLOR_LIGHTGREEN) until tonumber(amount) and tonumber(amount)<1000
         if mattype and itemtype then
             for i=1,tonumber(amount) do
 			    createItem({mattype,matindex},{itemtype,itemsubtype},quality,pos,description)
