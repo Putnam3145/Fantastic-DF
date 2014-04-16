@@ -20,11 +20,7 @@ hiddenEventInfo.UNIT_SPAWNED.func=function()
 	end)
 end
 
-local metaEventTypes={__tostring=function(self) return self.activated end,__metatable='just for tostring'}
-
 eventTypes={UNIT_SPAWNED=false}
-
-setmetatable(eventTypes,metaEventTypes)
 
 function enableEvent(eventType,numTicks)
 	local eventActivated=eventTypes[eventType]
