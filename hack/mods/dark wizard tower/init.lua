@@ -5,7 +5,7 @@ loadnum=-100
 name="Wizard Tower"
 author="Putnam"
 raws_list={'entity_wizard_fantastic.txt','creature_wizard_fantastic.txt','language_WIZARD_FANTASTIC.txt','interaction_wizard_fantastic.txt','reaction_wizard_fantastic.txt',
-           'building_wizard_fantastic.txt'}
+           'building_wizard_fantastic.txt','inorganic_wizard_fantastic.txt'}
 
 function findGuards(str,start,patch_guard)
 	local pStart=G.string.find(str,patch_guard[1],start)

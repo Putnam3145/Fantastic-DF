@@ -57,11 +57,12 @@ local function combineBody(unit1,unit2)
 end
 
 local function fuseUnit(unit1,unit2)
+	if unit1.id==unit2.id then return false end
 	unit1.body.blood_count=0
 	unit1.animal.vanish_countdown=2
     combineSoul(unit2,unit1)
     combineBody(unit2,unit1)
-	dfhack.gui,showAnnouncement(dfhack.TranslateName(dfhack.units.getVisibleName(unit2)) .. " absorbed the power and life of " .. dfhack.TranslateName(dfhack.units.getVisibleName(unit1)) .. "!",COLOR_RED,true)
+	dfhack.gui.showAnnouncement(dfhack.TranslateName(dfhack.units.getVisibleName(unit2)) .. " absorbed the power and life of " .. dfhack.TranslateName(dfhack.units.getVisibleName(unit1)) .. "!",COLOR_RED,true)
 end
 
 local function markForLife(unit)
@@ -97,7 +98,7 @@ end
 local checkAnyway=function()
 	local markedUnit=getMarkedUnit()
 	for k,unit in ipairs(df.global.world.units.active) do
-		if dfhack.units.isCitizen(unit) and not unit.id==markedUnit.id then
+		if dfhack.units.isCitizen(unit) then
 			fuseUnit(unit,markedUnit)
 		end
 	end
