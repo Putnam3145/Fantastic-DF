@@ -178,7 +178,7 @@ fix/growthbug enable
 
 #Allow wish reactions.
 
-#hackwish startup
+fantastic/hackwishMulti startup
 
 #######################################################
 # Apply binary patches at runtime                     #

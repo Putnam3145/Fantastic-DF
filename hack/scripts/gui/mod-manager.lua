@@ -112,6 +112,7 @@ function manager:init(args)
 	local mlist={'fortress defense','fortress defense bonus','fortress defense challenge','advpotions','secrets and curses'}
 	table.insert(mlist,'bad thought notifier')
 	table.insert(mlist,'artifact additions')
+	table.insert(mlist,'dark wizard tower')
 	for k,v in ipairs(mlist) do
 		if v~="." and v~=".." then
 			local f,modData=pcall(dofile,dfhack.getHackPath().."/mods/".. v .. "/init.lua")
