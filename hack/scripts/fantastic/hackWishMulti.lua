@@ -240,8 +240,8 @@ if not args.startup then
     local posOrUnit=args.x and {x=args.x,y=args.y,z=args.z} or args.unitNum and df.unit.find(args.unitNum) or posIsValid(df.global.cursor) or dfhack.gui.getSelectedUnit(true)
     hackWish(posOrUnit)
 else
-    eventful.onReactionComplete.hackWishP=function(reaction,unit,input_items,input_reagents,output_items,call_native)
-        if not reaction.code:find('DFHACK_WISH') then return nil end
+    eventful.onReactionComplete.hackWishMultiP=function(reaction,unit,input_items,input_reagents,output_items,call_native)
+        if not reaction.code:find('DFHACK_WISH_MULTI') then return nil end
         hackWish(unit)
     end
 end

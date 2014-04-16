@@ -5,41 +5,7 @@ loadnum=7
 name="Artifact mats"
 author="Putnam"
 
-patch_init=[[
-do
-	local function isBlunt(item)
-		if not item:isWeapon() then return false end
-		for k,v in ipairs(item.subtype.attacks) do
-			if v.edged then return false end
-		end
-		return true
-	end
-
-	local function activateArtifactChanges()
-		local eventful=require('plugins.eventful')
-
-		eventful.enableEvent(eventful.eventType['ITEM_CREATED'],4)
-
-		eventful.onItemCreated.fantasticArtifactP=function(item_id)
-			local item=df.item.find(item_id)
-			--check if item is eligible for this particular function
-			if item.flags.artifact and (item:isWeapon() or item:getEffectiveArmorLevel()<2) then
-				local matInfo
-				--check if blunt or not; if blunt, set matInfo (defined above) to the blunt artifact mat, else sharp/armor artifact mat
-				if isBlunt(item) then
-					matinfo=dfhack.matinfo.find('ARTIFACT_BLUNT_P')
-				else
-					matinfo=dfhack.matinfo.find('ARTIFACT_SHARP_ARMOR_P')
-				end
-				item:setMaterial(matInfo.type)
-				item:setMaterialIndex(matinfo.index)
-			end
-		end
-	end
-
-	activateArtifactChanges()
-end
-]]
+patch_init="dofile(dfhack.getDFPath()..'/hack/mods/artifact additions/artifactAdditions.lua')"
 
 description=[[
 Makes weapon and armor artifacts use a special material whenever they're made.
