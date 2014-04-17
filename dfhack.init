@@ -180,6 +180,8 @@ fix/growthbug enable
 
 fantastic/hackwishMulti startup
 
+fantastic/projectileExpansion enable
+
 #######################################################
 # Apply binary patches at runtime                     #
 #######################################################
