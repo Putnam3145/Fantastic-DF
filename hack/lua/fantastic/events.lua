@@ -10,10 +10,10 @@ hiddenEventInfo.UNIT_SPAWNED.func=function()
 	script.start(function()
 	local curNumUnits=#df.global.world.units.all
 	if curNumUnits>info.prevNumUnits then
-		for i=curNumUnits-1,prevNumUnits-1,-1 do
+		for i=curNumUnits-1,info.prevNumUnits-1,-1 do
 			onUnitSpawned(df.global.world.units.all[i].id)
 		end
-		prevNumUnits=curNumUnits
+		info.prevNumUnits=curNumUnits
 	end
 	script.sleep(info.ticks,'ticks')
 	info.func()
