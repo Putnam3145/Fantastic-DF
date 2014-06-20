@@ -3,7 +3,7 @@ local script=require('gui.script')
 fantasticEvents.enableEvent('UNIT_SPAWNED',50)
 local citizens={}
 fantasticEvents.onUnitSpawned.badThoughtNotifier=function(unitID)
-	local unit=df.units.find(unitID)
+	local unit=dfhack.units.find(unitID)
 	if dfhack.units.isCitizen(unit) then
 		table.insert(citizens,unit)
 	end
