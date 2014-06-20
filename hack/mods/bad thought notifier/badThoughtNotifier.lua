@@ -3,7 +3,7 @@ local script=require('gui.script')
 fantasticEvents.enableEvent('UNIT_SPAWNED',50)
 local citizens={}
 fantasticEvents.onUnitSpawned.badThoughtNotifier=function(unitID)
-	local unit=dfhack.units.find(unitID)
+	local unit=df.unit.find(unitID)
 	if dfhack.units.isCitizen(unit) then
 		table.insert(citizens,unit)
 	end
@@ -21,9 +21,7 @@ local function thoughtIsNegative(thought)
 end
 local function write_gamelog_and_announce(msg,color)
 	dfhack.gui.showAnnouncement(msg,color)
-	local log = io.open('gamelog.txt', 'a')
-	log:write(msg.."\n")
-	log:close()
+	dfhack.gui.writeToGamelog(msg)
 end
 local function checkForBadThoughts(silent)
 	script.start(function()
