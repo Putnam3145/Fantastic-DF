@@ -3,7 +3,12 @@ local fantasticEvents=require('fantastic.events')
 fantasticEvents.enableEvent("UNIT_SPAWNED",50)
 
 local function getMarkedUnit()
-	return df.unit.find(dfhack.persistent.get('CHOSEN_ONE_FOR_SITE_'..df.global.ui.site_id).ints[1])
+	local markPersistent='CHOSEN_ONE_FOR_SITE_'..df.global.ui.site_id
+	if dfhack.persistent.get(markPersistent) then
+		return df.unit.find(dfhack.persistent.get('CHOSEN_ONE_FOR_SITE_'..df.global.ui.site_id).ints[1])
+	else
+		return nil
+	end
 end
 
 local function insertSkill(unit,skill)
@@ -105,4 +110,4 @@ local checkAnyway=function()
 	end
 end
 
-dfhack.timeout(30,'ticks',checkAnyway)
+dfhack.timeout(100,'ticks',checkAnyway)
