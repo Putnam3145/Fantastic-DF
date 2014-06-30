@@ -1,16 +1,41 @@
-
+-- a graphical mod manager for df
 local gui=require 'gui'
 local widgets=require 'gui.widgets'
 
 local entity_file=dfhack.getDFPath().."/raw/objects/entity_default.txt"
 local init_file=dfhack.getDFPath().."/raw/init.lua"
+local mod_dir=dfhack.getDFPath().."/hack/mods"
+--[[ mod format: lua script that defines:
+    name - a name that is displayed in list
+    author - mod author, also displayed
+    description - mod description
+    OPTIONAL:
+    raws_list - a list (table) of file names that need to be copied over to df raws
+    patch_entity - a chunk of text to patch entity TODO: add settings to which entities to add
+    patch_init - a chunk of lua to add to lua init
+    patch_dofile - a list (table) of files to add to lua init as "dofile"
+    patch_files - a table of files to patch:
+        filename - a filename (in raws folder) to patch
+        patch - what to add
+        after - a string after which to insert
+    MORE OPTIONAL:
+    guard - a token that is used in raw files to find editions and remove them on uninstall
+    guard_init - a token for lua file
+    [pre|post]_(un)install - callback functions. Can trigger more complicated behavior
+]]
+
 function fileExists(filename)
 	local file=io.open(filename,"rb")
 	if file==nil then
 		return
 	else
 		file:close()
+		return true
 	end
+end
+if not fileExists(init_file) then
+    local initFile=io.open(initFileName,"a")
+    initFile:close()
 end
 function copyFile(from,to) --oh so primitive
     local filefrom=io.open(from,"rb")
@@ -27,12 +52,22 @@ function patchInit(initFileName,patch_guard,code)
 		code,patch_guard[2]))
 	initFile:close()
 end
+function patchDofile( initFileName,patch_guard,dofile_list )
+    local initFile=io.open(initFileName,"a")
+    initFile:write(patch_guard[1].."\n")
+    for _,v in ipairs(dofile_list) do
+        local fixed_path=mod_dir:gsub("\\","/")
+        initFile:write(string.format("dofile('%s/%s')\n",fixed_path,v))
+    end
+    initFile:write(patch_guard[2].."\n")
+    initFile:close()
+end
 function patchFile(file_name,patch_guard,after_string,code)
     local input_lines=patch_guard[1].."\n"..code.."\n"..patch_guard[2]
     
     local badchars="[%:%[%]]"
     local find_string=after_string:gsub(badchars,"%%%1") --escape some bad chars
-
+	
     local entityFile=io.open(file_name,"r")
     local buf=entityFile:read("*all")
     entityFile:close()
@@ -57,7 +92,7 @@ function unPatchFile(filename,patch_guard)
 	local file=io.open(filename,"r")
 	local buf=file:read("*all")
 	file:close()
-
+	
 	local newBuf=""
 	local pos=1
 	local lastPos=1
@@ -69,7 +104,7 @@ function unPatchFile(filename,patch_guard)
 			lastPos=endPos
 		end
 	until pos==nil
-
+	
 	local file=io.open(filename,"w+")
 	file:write(newBuf)
     file:close()
@@ -109,18 +144,19 @@ manager=defclass(manager,gui.FramedScreen)
 function manager:init(args)
     self.mods={}
     local mods=self.mods
-	local mlist={'fortress defense','fortress defense bonus','fortress defense challenge','advpotions','secrets and curses'}
-	table.insert(mlist,'bad thought notifier')
-	table.insert(mlist,'artifact additions')
-	table.insert(mlist,'dark wizard tower')
+	local mlist=dfhack.internal.getDir(mod_dir)
+
+    if #mlist==0 then
+        qerror("Mod directory not found! Are you sure it is in:"..mod_dir)
+    end
 	for k,v in ipairs(mlist) do
 		if v~="." and v~=".." then
-			local f,modData=pcall(dofile,dfhack.getHackPath().."/mods/".. v .. "/init.lua")
+			local f,modData=pcall(dofile,mod_dir.."/".. v .. "/init.lua")
             if f then
                 mods[modData.name]=modData
                 modData.guard=modData.guard or {">>"..modData.name.." patch","<<End "..modData.name.." patch"}
                 modData.guard_init={"--"..modData.guard[1],"--"..modData.guard[2]}
-                modData.path=dfhack.getHackPath()..'/mods/'..v..'/'
+                modData.path=mod_dir.."/"..v..'/'
             end
 		end
 	end
@@ -129,7 +165,7 @@ function manager:init(args)
     for k,v in pairs(self.mods) do 
         table.insert(modList,{text=k,data=v}) 
     end
-    table.sort(modList,function(a,b) return a.data.loadnum<b.data.loadnum end)
+    
     self:addviews{
         
         
@@ -257,7 +293,9 @@ function manager:install(trgMod,force)
 	if trgMod.patch_init then
 		patchInit(init_file,trgMod.guard_init,trgMod.patch_init)
 	end
-    
+    if trgMod.patch_dofile then
+        patchDofile(init_file,trgMod.guard_init,trgMod.patch_dofile)
+    end
     trgMod.installed=true
     
     if trgMod.post_install then
@@ -284,9 +322,10 @@ function manager:uninstall(trgMod)
             unPatchFile(dfhack.getDFPath().."/raw/objects/"..v.filename,trgMod.guard)
         end
     end
-	if trgMod.patch_init then
+	if trgMod.patch_init or trgMod.patch_dofile then
 		unPatchFile(init_file,trgMod.guard_init)
 	end
+
     trgMod.installed=false
 	if trgMod.post_uninstall then
         trgMod.post_uninstall(args)

@@ -9,9 +9,12 @@ hiddenEventInfo.UNIT_SPAWNED.func=function()
 	local info=hiddenEventInfo.UNIT_SPAWNED
 	script.start(function()
 	local curNumUnits=#df.global.world.units.all
+	local lowestUnitToCheck = info.prevNumUnits-1>-1 and info.prevNumUnits-1 or 0
 	if curNumUnits>info.prevNumUnits then
 		for i=curNumUnits-1,info.prevNumUnits-1,-1 do
-			onUnitSpawned(df.global.world.units.all[i].id)
+			if i>-1 then
+				onUnitSpawned(df.global.world.units.all[i].id)
+			end
 		end
 		info.prevNumUnits=curNumUnits
 	end

@@ -141,6 +141,12 @@ tweak military-training
 # prevent crash if bees die in a hive with ungathered products by insta-gathering them
 tweak hive-crash
 
+tweak craft-age-wear
+
+tweak adamantine-cloth-wear
+
+tweak confirm-embark
+
 ###########################
 # Globally acting plugins #
 ###########################
