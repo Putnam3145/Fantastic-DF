@@ -143,7 +143,7 @@ get rid of the outside ** by setting this to NO.
 
 Set this to YES to display fluids as numbers indicating depth.
 
-[SHOW_FLOW_AMOUNTS:NO]
+[SHOW_FLOW_AMOUNTS:YES]
 
 If you'd prefer to leave the history behind every engraving for your adventurers to discover, then set this to NO.
 
