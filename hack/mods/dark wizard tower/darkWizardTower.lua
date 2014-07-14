@@ -110,4 +110,9 @@ local checkAnyway=function()
 	end
 end
 
-dfhack.timeout(100,'ticks',checkAnyway)
+local fallBackLoop=function()
+	checkAnyway()
+	dfhack.timeout(6000,'ticks',fallBackLoop)
+end
+
+dfhack.timeout(100,'ticks',fallBackLoop)
