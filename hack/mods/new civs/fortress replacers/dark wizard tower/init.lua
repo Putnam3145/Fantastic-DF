@@ -60,12 +60,12 @@ pre_uninstall=function(args)
 	addCivControllable(G.dfhack.getDFPath().."/raw/objects/entity_default.txt",{'<<Civ controllable patch','>>End Civ controllable'},"[ENTITY:MOUNTAIN]","[CIV_CONTROLLABLE]")
 end
 
-patch_init="dofile(dfhack.getDFPath()..'/hack/mods/dark wizard tower/darkWizardTower.lua')"
+patch_init="dofile(dfhack.getDFPath()..'/hack/mods/fortress replacers/dark wizard tower/darkWizardTower.lua')"
 
 description=[[
-Disables dwarves and replaces them with 
-dark wizards, a mode where there can be
-only one (citizen).
+A mode where there is only one citizen.
 A very powerful citizen, mind.
+Replaces the "no micro" design with a
+"no macro" design.
 ]]
 return _ENV

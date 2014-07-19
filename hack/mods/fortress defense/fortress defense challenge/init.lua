@@ -2,7 +2,7 @@ local G=_G
 local _ENV={}
 
 loadnum=2
-name="FD Challenge"
+name="Challenge"
 raws_list={"creature_fdchallenge.txt","entity_fdchallenge.txt"}
 		   
 author="darkflagrance"
