@@ -1,7 +1,7 @@
 local G=_G
 local _ENV={}
 
-loadnum=-100
+
 name="Fortress replacers"
 author="Various"
 

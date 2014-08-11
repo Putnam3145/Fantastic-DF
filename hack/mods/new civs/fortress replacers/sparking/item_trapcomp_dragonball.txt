@@ -1,0 +1,11 @@
+item_trapcomp_dragonball
+[OBJECT:ITEM]
+	[ITEM_TRAPCOMP:ITEM_TRAPCOMP_CORKSCREW_DB]
+		[NAME:corkscrew:corkscrews]
+		[ADJECTIVE:mechanical]
+		[SIZE:1600]
+		[HITS:1]
+		[MATERIAL_SIZE:5]
+		[IS_SCREW]
+		[WOOD]
+		[ATTACK:EDGE:100:1:drill:drills:NO_SUB:100]

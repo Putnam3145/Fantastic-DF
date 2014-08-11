@@ -2,12 +2,18 @@ local fantasticEvents=require('fantastic.events')
 
 fantasticEvents.enableEvent("UNIT_SPAWNED",50)
 
+local function firstCitizenFound()
+	for k,v in ipairs(df.global.world.units.active) do
+		if dfhack.units.isCitizen(v) and dfhack.units.isAlive(v) then return v end
+	end
+end
+
 local function getMarkedUnit()
 	local markPersistent='CHOSEN_ONE_FOR_SITE_'..df.global.ui.site_id
 	if dfhack.persistent.get(markPersistent) then
 		return df.unit.find(dfhack.persistent.get('CHOSEN_ONE_FOR_SITE_'..df.global.ui.site_id).ints[1])
 	else
-		return nil
+		return firstCitizenFound()
 	end
 end
 

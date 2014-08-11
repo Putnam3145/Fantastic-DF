@@ -2,8 +2,8 @@ local G=_G
 local _ENV={}
 
 
-name="Molybdenum steel"
-raws_list={"inorganic_molybdenum_fantastic.txt","reaction_molybdenum_fantastic.txt"}
+name="Putnam's stuff"
+raws_list={"inorganic_putnamagic.txt","interaction_secret_putnamagic.txt","interaction_sphere_putnamagic.txt","reaction_adventure_putnamagic.txt"}
 author="Putnam"
 
 function fileExists(filename)
@@ -25,7 +25,8 @@ function checkInstalled()
 end
 
 description=[[
-Adds molybdenum and a process for making steel using 
-it that requires no coal.
+Adds a bunch of secrets/curses made by Putnam.
+Recommended! On by default.
+These were made a while ago. Planned to be made more modular.
 ]]
 return _ENV

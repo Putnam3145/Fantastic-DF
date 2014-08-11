@@ -2,10 +2,15 @@ local G=_G
 local _ENV={}
 
 
-name="Wizard Tower"
+name="Sparking!"
 author="Putnam"
-raws_list={'entity_wizard_fantastic.txt','creature_wizard_fantastic.txt','language_WIZARD_FANTASTIC.txt','interaction_wizard_fantastic.txt','reaction_wizard_fantastic.txt',
-           'building_wizard_fantastic.txt','inorganic_wizard_fantastic.txt'}
+raws_list={}
+
+for k,v in ipairs(dfhack.internal.getDir(dfhack.getDFPath()..'/hack/mods/fortress replacers/sparking')) do
+	if v:find('.txt') then
+		table.insert(raws_list,v)
+	end
+end
 
 function findGuards(str,start,patch_guard)
 	local pStart=G.string.find(str,patch_guard[1],start)
@@ -60,12 +65,10 @@ pre_uninstall=function(args)
 	addCivControllable(G.dfhack.getDFPath().."/raw/objects/entity_default.txt",{'<<Civ controllable patch','>>End Civ controllable'},"[ENTITY:MOUNTAIN]","[CIV_CONTROLLABLE]")
 end
 
-patch_init="dofile(dfhack.getDFPath()..'/hack/mods/fortress replacers/dark wizard tower/darkWizardTower.lua')"
+patch_init="dofile(dfhack.getDFPath()..'/hack/mods/fortress replacers/sparking/sparking.lua')"
 
 description=[[
-A mode where there is only one citizen.
-A very powerful citizen, mind.
-Replaces the "no micro" design with a
-"no macro" design.
+A mode where you play as Saiyans.
+It's pretty silly.
 ]]
 return _ENV

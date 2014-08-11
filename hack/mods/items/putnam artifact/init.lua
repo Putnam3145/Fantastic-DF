@@ -2,8 +2,8 @@ local G=_G
 local _ENV={}
 
 
-name="Molybdenum steel"
-raws_list={"inorganic_molybdenum_fantastic.txt","reaction_molybdenum_fantastic.txt"}
+name="Artifact items"
+raws_list={"item_artifact_fantastic_p.txt"}
 author="Putnam"
 
 function fileExists(filename)
@@ -25,7 +25,6 @@ function checkInstalled()
 end
 
 description=[[
-Adds molybdenum and a process for making steel using 
-it that requires no coal.
+Adds a few items that can be made only as artifacts.
 ]]
 return _ENV

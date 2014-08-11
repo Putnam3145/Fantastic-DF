@@ -1,10 +1,9 @@
 local G=_G
 local _ENV={}
 
-loadnum=-98
 name="Industrial mods"
 author="Various"
-
+category=true
 description=[[
 Mods that add more to various industries.
 Some may add micromanagement. Beware!

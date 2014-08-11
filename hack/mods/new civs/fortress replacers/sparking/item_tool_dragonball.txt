@@ -1,0 +1,38 @@
+item_tool_dragonball
+
+[OBJECT:ITEM]
+
+[ITEM_TOOL:KIENZAN]
+	[NAME:kienzan:kienzan]
+	[TILE:15]
+	[SIZE:3000]
+	[MATERIAL_SIZE:4]
+	[VALUE:10]
+	[MINIMUM_SIZE:30000]
+	[TWO_HANDED:30000]
+	[ATTACK:EDGE:200000:20000:cut:cuts:NO_SUB:100000]
+	
+[ITEM_TOOL:SALZA_BLADE]
+	[NAME:salza blade:salza blades]
+	[TILE:'/']
+	[SIZE:200]
+	[VALUE:1]
+	[SKILL:GRASP_STRIKE]
+	[MINIMUM_SIZE:12000]
+	[TWO_HANDED:12000]
+	[ATTACK:EDGE:100:20000:stab:stabs:NO_SUB:1500]
+	[ATTACK:EDGE:1000:15000:slash:slashes:NO_SUB:1000]
+	
+[ITEM_TOOL:DRAGONBALL]
+	[NAME:dragon ball:dragon balls]
+	[TILE:'o']
+	[SIZE:50]
+	[VALUE:5000]
+	[UNIMPROVABLE]
+	
+[ITEM_TOOL:FUSION_DB]
+	[NAME:instructions for fusion:instructions for fusion]
+	[TILE:213]
+	[SIZE:50]
+	[VALUE:10000]
+	[UNIMPROVABLE]
