@@ -175,38 +175,8 @@ syndromeTrigger enable
 
 # write the correct season to gamelog on world load
 soundsense-season
-
-# patch the material objects in memory to fix cloth stockpiles
-fix/cloth-stockpile enable
-
-# fix dwarf growth size
-fix/growthbug enable
-
 #Allow wish reactions.
 
-fantastic/hackwishMulti startup
 
-fantastic/projectileExpansion enable
-
-#######################################################
-# Apply binary patches at runtime                     #
-#######################################################
-
-# Bug 5994 - items teleported when removing a construction
-binpatch apply deconstruct-teleport
-binpatch apply deconstruct-heapfall
-
-# Bug 4406 - hospital overstocking on all items
-binpatch apply hospital-overstocking
-
-# Bug 808 - custom reactions completely using up all of their reagents
-binpatch apply custom-reagent-size
-
-# Bug 4530 - marksdwarves not training when quiver full of combat-only ammo
-binpatch apply training-ammo
-
-# Bug 1445 - weapon racks broken, armor stand capacity too low
-binpatch apply weaponrack-unassign
-binpatch apply armorstand-capacity
 
 cls

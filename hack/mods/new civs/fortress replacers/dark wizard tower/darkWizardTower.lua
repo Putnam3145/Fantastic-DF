@@ -122,3 +122,5 @@ local fallBackLoop=function()
 end
 
 dfhack.timeout(100,'ticks',fallBackLoop)
+
+dfhack.run_script('reaction-trigger','-reactionName','CONJURE_ITEMS_DARK_WIZARD_FANTASTIC','-command','[','gui/hack-wish','-multi','-restrictive','-unit','\\WORKER_ID')
