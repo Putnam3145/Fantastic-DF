@@ -97,7 +97,7 @@ creature_desert
 	[HOMEOTHERM:10067]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
@@ -150,7 +150,7 @@ creature_desert
 		[DESCRIPTION:A large, long-necked creature with two fleshy humps on its back.  It is domesticated to carry passengers and cargo.]
 		[CASTE_NAME:camel:camels:camel]
 
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A large, long-necked creature with two fleshy humps on its back.  It is domesticated to carry passengers and cargo.]
 		[CASTE_NAME:camel:camels:camel]
@@ -277,7 +277,7 @@ creature_desert
 		[FEMALE]
 		[DESCRIPTION:A tiny shelled reptile that lives in the desert.]
 		[CASTE_NAME:desert tortoise:desert tortoises:desert tortoise]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A tiny shelled reptile that lives in the desert.]
 		[CASTE_NAME:desert tortoise:desert tortoises:desert tortoise]
@@ -380,7 +380,7 @@ creature_desert
 		[FEMALE]
 		[DESCRIPTION:A tiny, brightly-colored snake.  It is known for eating other snakes and being mistaken for its poisonous cousins.]
 		[CASTE_NAME:kingsnake:kingsnakes:kingsnake]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A tiny, brightly-colored snake.  It is known for eating other snakes and being mistaken for its poisonous cousins.]
 		[CASTE_NAME:kingsnake:kingsnakes:kingsnake]

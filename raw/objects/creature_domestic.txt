@@ -30,7 +30,7 @@ creature_domestic
 		[FEMALE]
 		[CASTE_NAME:cat:cats:cat]
 		[DESCRIPTION:A clever feline.  It is usually domestic and hunts vermin. It is often trained for hunting because of its great senses.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:cat:cats:cat]
 		[DESCRIPTION:A clever feline.  It is usually domestic and hunts vermin. It is often trained for hunting because of its great senses.]
@@ -173,7 +173,7 @@ creature_domestic
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:cow:cows:bovine]
 		[DESCRIPTION:A large mammalian herbivore.  They often bear large horns and the males are ill-tempered.  They are domesticated for milk and meat.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:bull:bulls:bull]
 		[DESCRIPTION:A large mammalian herbivore.  They often bear large horns and the males are ill-tempered.  They are domesticated for milk and meat.]
@@ -320,7 +320,7 @@ creature_domestic
 		[FEMALE]
 		[CASTE_NAME:dog:dogs:dog]
 		[DESCRIPTION:A medium-sized highly social mammalian carnivore.  It has a keen sense of smell.  It can be trained to obey commands.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:dog:dogs:dog]
 		[DESCRIPTION:A medium-sized highly social mammalian carnivore.  It has a keen sense of smell.  It can be trained to obey commands.]
@@ -434,7 +434,7 @@ creature_domestic
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:nanny goat:nanny goats:nanny goat]
 		[DESCRIPTION:A medium-sized herding animal.  It is known for its short horns and beard.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:billy goat:billy goats:billy goat]
 		[DESCRIPTION:A medium-sized herding animal.  It is known for its short horns and beard.]
@@ -581,7 +581,7 @@ creature_domestic
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:sow:sows:sow]
 		[DESCRIPTION:A medium-sized domestic animal.  It has a distinctive snout and corkscrew tail.  It is thought by some to be intelligent.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:boar:boars:boar]
 		[DESCRIPTION:A medium-sized domestic animal.  It has a distinctive snout and corkscrew tail.  It is thought by some to be intelligent.]
@@ -724,7 +724,7 @@ creature_domestic
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:ewe:ewes:ewe]
 		[DESCRIPTION:A medium-sized herding animal.  It is prized for its thick wool coat.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:ram:rams:ram]
 		[DESCRIPTION:A medium-sized herding animal.  It is prized for its thick wool coat.]
@@ -938,7 +938,7 @@ creature_domestic
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:62]
 			[CLUTCH_SIZE:4:15]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[CASTE_NAME:rooster:roosters:rooster]
 		[MALE]
 	[SELECT_CASTE:ALL]

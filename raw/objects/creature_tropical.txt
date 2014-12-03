@@ -38,7 +38,7 @@ creature_tropical
 		[FEMALE]
 		[DESCRIPTION:A small bird with a large, brightly-colored bill.]
 		[CASTE_NAME:hornbill:hornbills:hornbill]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small bird with a large, brightly-colored bill.]
 		[CASTE_NAME:hornbill:hornbills:hornbill]
@@ -156,7 +156,7 @@ creature_tropical
 		[CASTE_NAME:ostrich hen:ostrich hens:ostrich hen]
 		[DESCRIPTION:A large flightless bird that runs through the savanna.  It has a long neck and legs.]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[CASTE_NAME:ostrich cock:ostrich cocks:ostrich cock]
 		[DESCRIPTION:A large flightless bird that runs through the savanna.  It has a long neck and legs.]
 		[MALE]
@@ -297,7 +297,7 @@ creature_tropical
 		[FEMALE]
 		[DESCRIPTION:The most intelligent of birds.  It can be found in the rainforest.]
 		[CASTE_NAME:parrot:parrots:parrot]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:The most intelligent of birds.  It can be found in the rainforest.]
 		[CASTE_NAME:parrot:parrots:parrot]
@@ -405,7 +405,7 @@ creature_tropical
 		[CASTE_NAME:peahen:peahens:peahen]
 		[DESCRIPTION:A small forest bird.  The male's tail creates an extravagant display for females.  At night, they roost in the trees.]
 		[CASTE_COLOR:6:0:0]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:peafowl:peafowls:peafowl]
 		[DESCRIPTION:A small forest bird.  The male's tail creates an extravagant display for females.  At night, they roost in the trees.]
@@ -538,7 +538,7 @@ creature_tropical
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:60]
 			[CLUTCH_SIZE:1:3]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:vulture:vultures:vulture]
 		[DESCRIPTION:A large bird with a featherless red head found in the sky of tropical deserts, scanning the ground for dead carcasses.]
@@ -715,7 +715,7 @@ Anacondas were sponsored by the generous contributions of the Bay 12 community.
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -827,7 +827,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:50]
 			[CLUTCH_SIZE:10:30]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -930,7 +930,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:5]
 			[CLUTCH_SIZE:10:30] 20 to 40
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -969,7 +969,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[ALL_ACTIVE]
 	[MUNDANE]
 ===============	
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge, predatory reptile found in coastal marshes and river deltas.  It ambushes its prey at the shore and uses its great size to drag the victim under and drown them.]
 		[CASTE_NAME:crocodile:crocodiles:crocodile]
@@ -1131,7 +1131,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 			[EGG_MATERIAL:LOCAL_CREATURE_MAT:EGG_YOLK:LIQUID]
 			[EGG_SIZE:70]
 			[CLUTCH_SIZE:15:25]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -1166,7 +1166,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[DESCRIPTION:A big snake found in the trees.  It kills its prey by using its long body to constrict them.]
 		[CASTE_NAME:python:pythons:python]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A big snake found in the trees.  It kills its prey by using its long body to constrict them.]
 		[CASTE_NAME:python:pythons:python]
@@ -1262,7 +1262,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[DESCRIPTION:A big reptile with a large shell.  It can retreat into its shell to escape predators.]
 		[CASTE_NAME:tortoise:tortoises:tortoise]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A big reptile with a large shell.  It can retreat into its shell to escape predators.]
 		[CASTE_NAME:tortoise:tortoises:tortoise]
@@ -1393,7 +1393,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:armadillo sow:armadillo sows:armadillo sow]
 		[DESCRIPTION:A small mammal with a leathery hide.  It can roll into a ball to escape predators.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:armadillo boar:armadillo boars:armadillo boar]
 		[DESCRIPTION:A small mammal with a leathery hide.  It can roll into a ball to escape predators.]
@@ -1502,7 +1502,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:buffalo cow:buffalo cows:buffalo cow]
 		[DESCRIPTION:A large mammalian herbivore.  It is powerfully built and has long curved horns.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:buffalo bull:buffalo bulls:buffalo bull]
 		[DESCRIPTION:A large mammalian herbivore.  It is powerfully built and has long curved horns.]
@@ -1650,7 +1650,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[LITTERSIZE:1:1]
 		[CASTE_NAME:elephant:elephants:elephant]
 		[DESCRIPTION:A huge, hairless mammal, found grazing in grasslands in groups.  It eats plants which it lifts up with its long trunk.  When angered, it will attack with its long tusks.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:elephant:elephants:elephant]
 		[DESCRIPTION:A huge, hairless mammal, found grazing in grasslands in groups.  It eats plants which it lifts up with its long trunk.  When angered, it will attack with its long tusks.]
@@ -1758,7 +1758,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A small hooved creature found in large groups in the grasslands.  It has short horns and moves by leaps and bounds.]
 		[CASTE_NAME:gazelle:gazelles:gazelle]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small hooved creature found in large groups in the grasslands.  It has short horns and moves by leaps and bounds.]
 		[CASTE_NAME:gazelle:gazelles:gazelle]
@@ -1872,7 +1872,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[DESCRIPTION:A huge leaf-eating mammal.  It has an extremely long neck.  Its skin has a distinctive brown and white pattern.]
 		[CASTE_NAME:giraffe:giraffes:giraffe]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge leaf-eating mammal.  It has an extremely long neck.  Its skin has a distinctive brown and white pattern.]
 		[CASTE_NAME:giraffe:giraffes:giraffe]
@@ -1974,7 +1974,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[DESCRIPTION:A huge, round, hairless river creature.  It is a plant-eating animal but has long tusks and can be aggressive and deadly if disturbed.]
 		[CASTE_NAME:hippo:hippos:hippo]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge, round, hairless river creature.  It is a plant-eating animal but has long tusks and can be aggressive and deadly if disturbed.]
 		[CASTE_NAME:hippo:hippos:hippo]
@@ -2139,7 +2139,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -2236,7 +2236,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -2323,7 +2323,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -2366,7 +2366,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[CASTE_NAME:jaguar:jaguars:jaguar]
 		[DESCRIPTION:A large, muscular, spotted feline found in tropical jungles.  It is solitary and stalks and ambushes its prey.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:jaguar:jaguars:jaguar]
 		[DESCRIPTION:A large, muscular, spotted feline found in tropical jungles.  It is solitary and stalks and ambushes its prey.]
@@ -2478,7 +2478,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[CASTE_NAME:lion:lions:lion]
 		[DESCRIPTION:A large ferocious predator found in grasslands.  It lives in groups of females and one male with a large mane.  They hunt together and are capable of felling extremely large prey.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:lion:lions:lion]
 		[DESCRIPTION:A large ferocious predator found in grasslands.  It lives in groups of females and one male with a large mane.  They hunt together and are capable of felling extremely large prey.]
@@ -2589,7 +2589,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[DESCRIPTION:A huge herbivore with thick plated skin and powerful build.  It is known for the thick horns on the end of its nose.]
 		[CASTE_NAME:rhinoceros:rhinoceroses:rhinoceros]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge herbivore with thick plated skin and powerful build.  It is known for the thick horns on the end of its nose.]
 		[CASTE_NAME:rhinoceros:rhinoceroses:rhinoceros]
@@ -2766,7 +2766,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 			[STATE_NAME:GAS:boiling tapir cheese]
 			[STATE_ADJ:GAS:boiling tapir cheese]
 			[PREFIX:NONE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -2806,7 +2806,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[FEMALE]
 		[CASTE_NAME:tiger:tigers:tiger]
 		[DESCRIPTION:A huge, striped predator.  It can be found anywhere in tropics on a lone hunt for its prey.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:tiger:tigers:tiger]
 		[DESCRIPTION:A huge, striped predator.  It can be found anywhere in tropics on a lone hunt for its prey.]
@@ -2917,7 +2917,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:warthog:warthogs:warthog]
 		[DESCRIPTION:A big short-tempered pig living in grass and woodland.  It has a large snout with four sharp tusks.  It will aggressively defend itself.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:warthog:warthogs:warthog]
 		[DESCRIPTION:A big short-tempered pig living in grass and woodland.  It has a large snout with four sharp tusks.  It will aggressively defend itself.]
@@ -3117,7 +3117,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -3205,7 +3205,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -3291,7 +3291,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -3380,7 +3380,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -3466,7 +3466,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -3566,7 +3566,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -3658,7 +3658,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -3752,7 +3752,7 @@ Black mambas were sponsored by the generous contributions of the Bay 12 communit
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]

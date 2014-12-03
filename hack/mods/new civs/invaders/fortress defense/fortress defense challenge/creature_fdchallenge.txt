@@ -35,7 +35,7 @@ creature_fdchallenge
 	[BODY_SIZE:1:168:3000000]
 	[BODY_SIZE:12:0:9000000]
 
-	[CASTE:MALE_JOTUN]
+	[CASTE:MALE_JOTUN][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 	[DESCRIPTION:The skin of this cold giant has been tempered by its frozen homeland.]
 	[PREFSTRING:deafening war chants]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
@@ -59,7 +59,7 @@ creature_fdchallenge
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:12:0:8000000]
 
-	[CASTE:MALE_ETTIN]
+	[CASTE:MALE_ETTIN][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 	[DESCRIPTION:With two heads, it is more cunning and wise than many living creatures, but it abuses its wisdom for its cruel desires.]
 	[PREFSTRING:cunning riddles]
 	[CREATURE_TILE:'E']
@@ -83,7 +83,7 @@ creature_fdchallenge
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:20:0:6000000]
 
-	[CASTE:MALE_OGRE]
+	[CASTE:MALE_OGRE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 	[DESCRIPTION:Unlike its plainsdweller relatives, it possesses the ability to hate rather than merely hunger.]
 	[PREFSTRING:disfigured features]
 	[CREATURE_TILE:'O']
@@ -107,7 +107,7 @@ creature_fdchallenge
 	[BODY_SIZE:1:168:2000000]
 	[BODY_SIZE:12:0:8000000]
 
-	[CASTE:MALE_CYCLOPS]
+	[CASTE:MALE_CYCLOPS][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 	[DESCRIPTION:Through its single crimson eye the world already appears painted in blood.]
 	[PREFSTRING:eyes that glow with the fire of the underworld]
 	[CREATURE_TILE:'C']
@@ -150,7 +150,7 @@ creature_fdchallenge
 		[CDI:WAIT_PERIOD:30]
 	[FIREIMMUNE][LIKES_FIGHTING][MAGMA_VISION]
 
-	[CASTE:MALE_ELDJOTUN]
+	[CASTE:MALE_ELDJOTUN][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 	[DESCRIPTION:A fearsome being that controls the flames of apocalypse.]
 	[PREFSTRING:blazing majesty]
 		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
@@ -470,7 +470,7 @@ creature_fdchallenge
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]
@@ -557,7 +557,7 @@ creature_fdchallenge
 	[CASTE:FEMALE]
 		[FEMALE]
 		[WEBBER:LOCAL_CREATURE_MAT:SILK]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:CHITIN]
@@ -644,7 +644,7 @@ creature_fdchallenge
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 	[SET_TL_GROUP:BY_CATEGORY:ALL:HAIR]

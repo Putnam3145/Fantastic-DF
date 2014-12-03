@@ -48,7 +48,7 @@ creature_temperate_savage
 		[FEMALE]
 		[DESCRIPTION:A small dog-like creature.  They are known to attack livestock.]
 		[CASTE_NAME:dingo:dingoes:dingo]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small dog-like creature.  They are known to attack livestock.]
 		[CASTE_NAME:dingo:dingoes:dingo]
@@ -162,7 +162,7 @@ creature_temperate_savage
 		[FEMALE]
 		[DESCRIPTION:A small spiny mammal with a long snout.  It eats ants and termites and reproduces by laying eggs.]
 		[CASTE_NAME:echidna:echidnas:echidna]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small spiny mammal with a long snout.  It eats ants and termites and reproduces by laying eggs.]
 		[CASTE_NAME:echidna:echidnas:echidna]
@@ -284,7 +284,7 @@ creature_temperate_savage
 		[DESCRIPTION:A medium-sized creature that can be found hopping through the grassland.]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[CASTE_NAME:kangaroo buck:kangaroo bucks:kangaroo buck]
 		[DESCRIPTION:A medium-sized creature that can be found hopping through the grassland.]
 		[MALE]
@@ -419,7 +419,7 @@ creature_temperate_savage
 		[FEMALE]
 		[CASTE_NAME:kiwi hen:kiwi hens:kiwi hen]
 		[DESCRIPTION:A small, brown, flightless bird.  It eats insects and grubs and is known for its keen sense of smell.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:kiwi cock:kiwi cocks:kiwi cock]
 		[DESCRIPTION:A small, brown, flightless bird.  It eats insects and grubs and is known for its keen sense of smell.]
@@ -529,7 +529,7 @@ creature_temperate_savage
 		[FEMALE]
 		[DESCRIPTION:A small, grey, tree-dwelling creature.]
 		[CASTE_NAME:koala:koalas:koala]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small, grey, tree-dwelling creature.]
 		[CASTE_NAME:koala:koalas:koala]
@@ -643,7 +643,7 @@ creature_temperate_savage
 		[FEMALE]
 		[DESCRIPTION:A small mammal resembling a large, white rat.]
 		[CASTE_NAME:opossum:opossums:opossum]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small mammal resembling a large, white rat.]
 		[CASTE_NAME:opossum:opossums:opossum]
@@ -756,7 +756,7 @@ creature_temperate_savage
 		[FEMALE]
 		[DESCRIPTION:A small semi-aquatic, egg laying mammal with a bill, flat tail and poison spurs.]
 		[CASTE_NAME:platypus:platypuses:platypus]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small semi-aquatic, egg laying mammal with a bill, flat tail and poison spurs.]
 		[CASTE_NAME:platypus:platypuses:platypus]
@@ -891,7 +891,7 @@ creature_temperate_savage
 		[FEMALE]
 		[DESCRIPTION:A small rodent covered with sharp quills.  They eat grass and leaves and can even climb trees.]
 		[CASTE_NAME:porcupine:porcupines:porcupine]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small rodent covered with sharp quills.  They eat grass and leaves and can even climb trees.]
 		[CASTE_NAME:porcupine:porcupines:porcupine]
@@ -1009,7 +1009,7 @@ creature_temperate_savage
 		[FEMALE]
 		[DESCRIPTION:A small black and white mammal.  It is capable of spraying a stinking fluid.]
 		[CASTE_NAME:skunk:skunks:skunk]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small black and white mammal.  It is capable of spraying a stinking fluid.]
 		[CASTE_NAME:skunk:skunks:skunk]
@@ -1120,7 +1120,7 @@ creature_temperate_savage
 		[FEMALE]
 		[CASTE_NAME:wombat:wombats:wombat]
 		[DESCRIPTION:A small, stocky mammal.  It is found from the mountains to the woodlands.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:wombat:wombats:wombat]
 		[DESCRIPTION:A small, stocky mammal.  It is found from the mountains to the woodlands.]

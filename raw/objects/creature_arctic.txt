@@ -48,7 +48,7 @@ creature_arctic
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:cow moose:cow moose:cow moose]
 		[DESCRIPTION:A large mammal with great antlers and a large nose. It lives in taiga.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:bull moose:bull moose:bull moose]
 		[DESCRIPTION:A large mammal with great antlers and a large nose. It lives in taiga.]
@@ -176,7 +176,7 @@ creature_arctic
 		[FEMALE]
 		[DESCRIPTION:A huge predatory mammal covered in white hair.  It hunts the shores along tundra and glaciers.]
 		[CASTE_NAME:polar bear:polar bears:polar bear]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge predatory mammal covered in white hair.  It hunts the shores along tundra and glaciers.]
 		[CASTE_NAME:polar bear:polar bears:polar bear]
@@ -290,7 +290,7 @@ creature_arctic
 		[CASTE_NAME:reindeer cow:reindeer cows:reindeer cow]
 		[DESCRIPTION:A large mammalian herbivore living in cold climates.  It has large antlers and sought-after fur.]
 		
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:reindeer bull:reindeer bulls:reindeer bull]
 		[DESCRIPTION:A large mammalian herbivore living in cold climates.  It has large antlers and sought-after fur.]
@@ -432,7 +432,7 @@ creature_arctic
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:yak cow:yak cows:yak cow]
 		[DESCRIPTION:A large mammalian herbivore.  It has long fur and curving horns.  It can be found in the mountains and cold climates.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:yak bull:yak bulls:yak bull]
 		[DESCRIPTION:A large mammalian herbivore.  It has long fur and curving horns.  It can be found in the mountains and cold climates.]
@@ -583,7 +583,7 @@ creature_arctic
 		[MULTIPLE_LITTER_RARE]
 		[DESCRIPTION:A large ape-like creature with white fur, found in the snowy wilds.]
 		[CASTE_NAME:yeti:yetis:yeti]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A large ape-like creature with white fur, found in the snowy wilds.]
 		[CASTE_NAME:yeti:yetis:yeti]

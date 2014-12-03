@@ -50,7 +50,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A small sea bird with great wings.  It soars through the sky and dives for food on the surface of the water.]
 		[CASTE_NAME:albatross:albatrosses:albatross]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small sea bird with great wings.  It soars through the sky and dives for food on the surface of the water.]
 		[CASTE_NAME:albatross:albatrosses:albatross]
@@ -159,7 +159,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A small bird of prey with black markings on its eyes.  It hunts near bodies of water.]
 		[CASTE_NAME:osprey:ospreys:osprey]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small bird of prey with black markings on its eyes.  It hunts near bodies of water.]
 		[CASTE_NAME:osprey:ospreys:osprey]
@@ -277,7 +277,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A small flightless bird that lives on arctic shorelines.]
 		[CASTE_NAME:penguin:penguins:penguin]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small flightless bird that lives on arctic shorelines.]
 		[CASTE_NAME:penguin:penguins:penguin]
@@ -391,7 +391,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A medium-sized sea mammal with a long thin horn on its nose.  It uses this horn to communicate and break up ice.]
 		[CASTE_NAME:narwhal:narwhals:narwhal]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A medium-sized sea mammal with a long thin horn on its nose.  It uses this horn to communicate and break up ice.]
 		[CASTE_NAME:narwhal:narwhals:narwhal]
@@ -510,7 +510,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A huge ocean mammal.  It is a vicious predator and can hunt in groups.]
 		[CASTE_NAME:orca:orcas:orca]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge ocean mammal.  It is a vicious predator and can hunt in groups.]
 		[CASTE_NAME:orca:orcas:orca]
@@ -615,7 +615,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A small river mammal with a long body.  They enjoy eating shellfish and other small animals.]
 		[CASTE_NAME:otter:otters:otter]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small river mammal with a long body.  They enjoy eating shellfish and other small animals.]
 		[CASTE_NAME:otter:otters:otter]
@@ -723,7 +723,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A small marine mammal.  Its young are prized for their white fur.]
 		[CASTE_NAME:seal:seals:seal]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small marine mammal.  Its young are prized for their white fur.]
 		[CASTE_NAME:seal:seals:seal]
@@ -817,7 +817,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A huge aquatic mammal with giant tusks and dense whiskers.  They are thick and blubbery and live almost exclusively on mussels.]
 		[CASTE_NAME:walrus:walruses:walrus]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge aquatic mammal with giant tusks and dense whiskers.  They are thick and blubbery and live almost exclusively on mussels.]
 		[CASTE_NAME:walrus:walruses:walrus]
@@ -919,7 +919,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A giant marine mammal with a toothy jaw.]
 		[CASTE_NAME:whale:whales:whale]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A giant marine mammal with a toothy jaw.]
 		[CASTE_NAME:whale:whales:whale]
@@ -1026,7 +1026,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A tiny shelled ocean creature with many long legs.  It has two large pincers on its front limbs.]
 		[CASTE_NAME:crab:crabs:crab]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A tiny shelled ocean creature with many long legs.  It has two large pincers on its front limbs.]
 		[CASTE_NAME:crab:crabs:crab]
@@ -1106,7 +1106,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A medium-sized underwater mollusk with eight arms.  It is the most clever of its kind.]
 		[CASTE_NAME:octopus:octopuses:octopus]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A medium-sized underwater mollusk with eight arms.  It is the most clever of its kind.]
 		[CASTE_NAME:octopus:octopuses:octopus]
@@ -1206,7 +1206,7 @@ creature_large_ocean
 		[FEMALE]
 		[DESCRIPTION:A giant limbless dragon that lives in the sea.]
 		[CASTE_NAME:sea serpent:sea serpents:sea serpent]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A giant limbless dragon that lives in the sea.]
 		[CASTE_NAME:sea serpent:sea serpents:sea serpent]
@@ -1377,7 +1377,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1457,7 +1457,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1537,7 +1537,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1617,7 +1617,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1697,7 +1697,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1767,7 +1767,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1837,7 +1837,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1916,7 +1916,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -1996,7 +1996,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2076,7 +2076,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2155,7 +2155,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2234,7 +2234,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2314,7 +2314,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2393,7 +2393,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2472,7 +2472,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2552,7 +2552,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2632,7 +2632,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2703,7 +2703,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2765,7 +2765,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2843,7 +2843,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -2917,7 +2917,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -2995,7 +2995,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3064,7 +3064,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
@@ -3145,7 +3145,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3221,7 +3221,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3296,7 +3296,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3370,7 +3370,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3446,7 +3446,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3522,7 +3522,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3597,7 +3597,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3672,7 +3672,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3747,7 +3747,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3823,7 +3823,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]
@@ -3900,7 +3900,7 @@ creature_large_ocean
 	[MUNDANE]
 	[CASTE:FEMALE]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 	[SELECT_CASTE:ALL]
 		[SET_TL_GROUP:BY_CATEGORY:ALL:SCALE]

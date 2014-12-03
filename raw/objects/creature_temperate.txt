@@ -72,7 +72,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small snake with ridged scales and a powerful venomous bite.]
 		[CASTE_NAME:adder:adders:adder]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small snake with ridged scales and a powerful venomous bite.]
 		[CASTE_NAME:adder:adders:adder]
@@ -191,7 +191,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small reptile with a tell-tale rattle and vicious bite that leads to a quick death.]
 		[CASTE_NAME:rattlesnake:rattlesnakes:rattlesnake]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small reptile with a tell-tale rattle and vicious bite that leads to a quick death.]
 		[CASTE_NAME:rattlesnake:rattlesnakes:rattlesnake]
@@ -310,7 +310,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A medium-sized reptile with a thick shell, which it can retreat into when threatened.  This creature can administer a painful bite.]
 		[CASTE_NAME:snapping turtle:snapping turtles:snapping turtle]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A medium-sized reptile with a thick shell, which it can retreat into when threatened.  This creature can administer a painful bite.]
 		[CASTE_NAME:snapping turtle:snapping turtles:snapping turtle]
@@ -442,7 +442,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A medium-sized, red-faced black bird that searches the temperate lands for carrion.]
 		[CASTE_NAME:buzzard:buzzards:buzzard]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A medium-sized, red-faced black bird that searches the temperate lands for carrion.]
 		[CASTE_NAME:buzzard:buzzards:buzzard]
@@ -560,7 +560,7 @@ creature_temperate
 		[FEMALE]
 		[CASTE_NAME:duck:ducks:duck]
 		[DESCRIPTION:A small water bird.  It has a long neck and powerful legs meant for swimming and diving.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:duck:ducks:duck]
 		[DESCRIPTION:A small water bird.  It has a long neck and powerful legs meant for swimming and diving.]
@@ -672,7 +672,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small bird of prey.]
 		[CASTE_NAME:eagle:eagles:eagle]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small bird of prey.]
 		[CASTE_NAME:eagle:eagles:eagle]
@@ -806,7 +806,7 @@ creature_temperate
 		[CASTE_NAME:falcon:falcons:falcon]
 		[DESCRIPTION:A small bird of prey that is capable of great speed.  They dive on unsuspecting vermin.]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[CASTE_NAME:falcon:falcons:falcon]
 		[DESCRIPTION:A small bird of prey that is capable of great speed.  They dive on unsuspecting vermin.]
 		[MALE]
@@ -929,7 +929,7 @@ creature_temperate
 		[FEMALE]
 		[CASTE_NAME:gander:ganders:gander]
 		[DESCRIPTION:A small migratory bird.  It has a very long neck and can be found in lakes and other bodies of water.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:goose:geese:goose]
 		[DESCRIPTION:A small migratory bird.  It has a very long neck and can be found in lakes and other bodies of water.]
@@ -1046,7 +1046,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small, nocturnal bird of prey with large eyes and protruding feathers.]
 		[CASTE_NAME:owl:owls:owl]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small, nocturnal bird of prey with large eyes and protruding feathers.]
 		[CASTE_NAME:owl:owls:owl]
@@ -1173,7 +1173,7 @@ creature_temperate
 		[DESCRIPTION:A small bird with long legs and bill, and a extremely long wingspan.]
 		[CASTE_NAME:stork:storks:stork]
 
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small bird with long legs and bill, and a extremely long wingspan.]
 		[CASTE_NAME:stork:storks:stork]
@@ -1278,7 +1278,7 @@ creature_temperate
 		[CASTE_NAME:pen swan:pen swans:pen swan]
 		[DESCRIPTION:A small aquatic bird, prized for its beauty.]
 		[FEMALE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[CASTE_NAME:cob swan:cob swans:cob swan]
 		[DESCRIPTION:A small aquatic bird, prized for its beauty.]
 		[MALE]
@@ -1385,7 +1385,7 @@ creature_temperate
 		[FEMALE]
 		[CASTE_NAME:turkey hen:turkey hens:turkey hen]
 		[DESCRIPTION:A small forest bird known for the distinctive flaps of skin hanging from its face.  It is prized for its meat.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:turkey gobbler:turkey gobblers:turkey gobbler]
 		[DESCRIPTION:A small forest bird known for the distinctive flaps of skin hanging from its face.  It is prized for its meat.]
@@ -1523,7 +1523,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small river mammal with a flat tail, known for building wooden dams.]
 		[CASTE_NAME:beaver:beavers:beaver]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small river mammal with a flat tail, known for building wooden dams.]
 		[CASTE_NAME:beaver:beavers:beaver]
@@ -1637,7 +1637,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A huge brown creature found in temperate woodland.  It is known for its ferocious attack, usually when it or its young are threatened.]
 		[CASTE_NAME:bear:bears:bear]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A huge brown creature found in temperate woodland.  It is known for its ferocious attack, usually when it or its young are threatened.]
 		[CASTE_NAME:bear:bears:bear]
@@ -1755,7 +1755,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A large solitary feline.  It is found most often in dense vegetation, ambushing its prey.]
 		[CASTE_NAME:cougar:cougars:cougar]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A large solitary feline.  It is found most often in dense vegetation, ambushing its prey.]
 		[CASTE_NAME:cougar:cougars:cougar]
@@ -1873,7 +1873,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A medium-sized dog-like creature.  It is sly, and groups can be heard howling in the night.]
 		[CASTE_NAME:coyote:coyotes:coyote]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A medium-sized dog-like creature.  It is sly, and groups can be heard howling in the night.]
 		[CASTE_NAME:coyote:coyotes:coyote]
@@ -1990,7 +1990,7 @@ creature_temperate
 	[CASTE:FEMALE]
 		[FEMALE]
 		[MULTIPLE_LITTER_RARE]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 ===============	
 	[SELECT_CASTE:ALL]
@@ -2118,7 +2118,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A large, round, lowland rodent.  It lives in burrows in the ground and ventures out to eat.]
 		[CASTE_NAME:groundhog:groundhogs:groundhog]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A large, round, lowland rodent.  It lives in burrows in the ground and ventures out to eat.]
 		[CASTE_NAME:groundhog:groundhogs:groundhog]
@@ -2231,7 +2231,7 @@ creature_temperate
 		[MULTIPLE_LITTER_RARE]
 		[CASTE_NAME:horse:horses:horse]
 		[DESCRIPTION:A large hooved, maned herbivore.  They can run swiftly and many are domesticated as steeds.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:steed:steeds:steed]
 		[DESCRIPTION:A large hooved, maned herbivore.  They can run swiftly and many are domesticated as steeds.]
@@ -2374,7 +2374,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A large canine found in temperate regions.  It is territorial and hunts in packs.]
 		[CASTE_NAME:wolf:wolves:wolf]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A large canine found in temperate regions.  It is territorial and hunts in packs.]
 		[CASTE_NAME:wolf:wolves:wolf]
@@ -2504,7 +2504,7 @@ creature_temperate
 		[FEMALE]
 		[CASTE_NAME:badger sow:badger sows:badger sow]
 		[DESCRIPTION:A small mammal with a striped face.  It lives in groups and is ferocious in combat.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:badger boar:badger boars:badger boar]
 		[DESCRIPTION:A small mammal with a striped face.  It lives in groups and is ferocious in combat.]
@@ -2625,7 +2625,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small carnivorous animal found in temperate climates.  It has orange fur and is known for its cleverness.]
 		[CASTE_NAME:fox:foxes:fox]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small carnivorous animal found in temperate climates.  It has orange fur and is known for its cleverness.]
 		[CASTE_NAME:fox:foxes:fox]
@@ -2736,7 +2736,7 @@ creature_temperate
 		[FEMALE]
 		[CASTE_NAME:doe rabbit:doe rabbits:doe rabbit]
 		[DESCRIPTION:A small lagomorph with long ears.  It has powerful hind legs which it uses to swiftly avoid predators.  It can be found anywhere from forests to grasslands.]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[CASTE_NAME:buck rabbit:buck rabbits:buck rabbit]
 		[DESCRIPTION:A small lagomorph with long ears.  It has powerful hind legs which it uses to swiftly avoid predators.  It can be found anywhere from forests to grasslands.]
@@ -2853,7 +2853,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small omnivorous animal with a bright mask of fur.  It is nocturnal and found in temperate forests.  It is a curious animal and has been known to steal from civilized areas.]
 		[CASTE_NAME:raccoon:raccoons:raccoon]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small omnivorous animal with a bright mask of fur.  It is nocturnal and found in temperate forests.  It is a curious animal and has been known to steal from civilized areas.]
 		[CASTE_NAME:raccoon:raccoons:raccoon]
@@ -2966,7 +2966,7 @@ creature_temperate
 		[FEMALE]
 		[DESCRIPTION:A small mammal with a slender body.  It hunts in mouse holes as well as barn yards.]
 		[CASTE_NAME:weasel:weasels:weasel]
-	[CASTE:MALE]
+	[CASTE:MALE][SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE].
 		[MALE]
 		[DESCRIPTION:A small mammal with a slender body.  It hunts in mouse holes as well as barn yards.]
 		[CASTE_NAME:weasel:weasels:weasel]
