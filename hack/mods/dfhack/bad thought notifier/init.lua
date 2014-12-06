@@ -9,6 +9,6 @@ patch_init="dofile(dfhack.getDFPath()..'/hack/mods/dfhack/bad thought notifier/b
 
 description=[[
 Adds a weekly message about what your dwarves are most unhappy about.
-Disabled for now due to thought rewrite.
+Recommended! On by default.
 ]]
 return _ENV
